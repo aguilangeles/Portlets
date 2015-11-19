@@ -1,0 +1,152 @@
+
+<root available-locales="en_US" default-locale="en_US">
+	<dynamic-element fieldNamespace="ddm" indexType="keyword" localizable="true" name="settings" readOnly="false" repeatable="false" required="false" showLabel="true" type="ddm-separator" width="">
+		<dynamic-element dataType="boolean" indexType="keyword" localizable="true" name="isImage" readOnly="false" repeatable="false" required="false" showLabel="true" type="checkbox" width="">
+			<dynamic-element dataType="image" fieldNamespace="wcm" indexType="keyword" localizable="true" name="imagen" readOnly="false" repeatable="false" required="false" showLabel="true" type="wcm-image" width="">
+				<meta-data locale="en_US">
+					<entry name="label">
+						<![CDATA[Imagen]]>
+					</entry>
+					<entry name="predefinedValue">
+						<![CDATA[]]>
+					</entry>
+					<entry name="tip">
+						<![CDATA[]]>
+					</entry>
+				</meta-data>
+			</dynamic-element>
+			<dynamic-element dataType="string" indexType="keyword" localizable="true" name="background" readOnly="false" repeatable="false" required="false" showLabel="true" type="text" width="small">
+				<meta-data locale="en_US">
+					<entry name="label">
+						<![CDATA[Color de Fondo]]>
+					</entry>
+					<entry name="predefinedValue">
+						<![CDATA[#67C39E]]>
+					</entry>
+					<entry name="tip">
+						<![CDATA[]]>
+					</entry>
+				</meta-data>
+			</dynamic-element>
+			<meta-data locale="en_US">
+				<entry name="label">
+					<![CDATA[¿Es el fondo una imagen?]]>
+				</entry>
+				<entry name="predefinedValue">
+					<![CDATA[false]]>
+				</entry>
+				<entry name="tip">
+					<![CDATA[Seleccione el check en caso de que desee que el fondo sea una imagen. Incluyala.]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<dynamic-element dataType="string" indexType="keyword" localizable="true" name="titleColor" readOnly="false" repeatable="false" required="false" showLabel="true" type="text" width="small">
+			<meta-data locale="en_US">
+				<entry name="label">
+					<![CDATA[Color Titulo]]>
+				</entry>
+				<entry name="predefinedValue">
+					<![CDATA[#FFF]]>
+				</entry>
+				<entry name="tip">
+					<![CDATA[Color del título principal]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<dynamic-element dataType="string" indexType="keyword" localizable="true" name="color_box" readOnly="false" repeatable="false" required="false" showLabel="true" type="text" width="small">
+			<meta-data locale="en_US">
+				<entry name="label">
+					<![CDATA[Color Caja]]>
+				</entry>
+				<entry name="predefinedValue">
+					<![CDATA[#FFF]]>
+				</entry>
+				<entry name="tip">
+					<![CDATA[Configure el color de la caja.]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<dynamic-element dataType="string" indexType="keyword" localizable="true" name="border_icon" readOnly="false" repeatable="false" required="false" showLabel="true" type="text" width="small">
+			<meta-data locale="en_US">
+				<entry name="label">
+					<![CDATA[Color Borde Icono]]>
+				</entry>
+				<entry name="predefinedValue">
+					<![CDATA[#67C39E]]>
+				</entry>
+				<entry name="tip">
+					<![CDATA[Modifique el color del borde del ícono]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<meta-data locale="en_US">
+			<entry name="label">
+				<![CDATA[Configuraciones]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[]]>
+			</entry>
+			<entry name="style">
+				<![CDATA[]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element dataType="string" indexType="keyword" localizable="true" name="heading" readOnly="false" repeatable="false" required="false" showLabel="true" type="text" width="small">
+		<meta-data locale="en_US">
+			<entry name="label">
+				<![CDATA[Titulo Principal]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[Protegé tus cosas y compras]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[Título de la sección. Highlight o destaque de producto]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element fieldNamespace="ddm" indexType="keyword" localizable="true" name="features" readOnly="false" repeatable="true" required="false" showLabel="true" type="ddm-separator" width="">
+		<dynamic-element dataType="image" fieldNamespace="wcm" indexType="keyword" localizable="true" name="icono" readOnly="false" repeatable="false" required="false" showLabel="true" type="wcm-image" width="">
+			<meta-data locale="en_US">
+				<entry name="label">
+					<![CDATA[Icono]]>
+				</entry>
+				<entry name="predefinedValue">
+					<![CDATA[]]>
+				</entry>
+				<entry name="tip">
+					<![CDATA[Imagen del producto]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<dynamic-element dataType="string" indexType="keyword" localizable="true" name="mensaje" readOnly="false" repeatable="false" required="false" showLabel="true" type="textarea" width="small">
+			<meta-data locale="en_US">
+				<entry name="label">
+					<![CDATA[mensaje]]>
+				</entry>
+				<entry name="predefinedValue">
+					<![CDATA[]]>
+				</entry>
+				<entry name="tip">
+					<![CDATA[Descripción del producto]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<meta-data locale="en_US">
+			<entry name="label">
+				<![CDATA[Contenido]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[]]>
+			</entry>
+			<entry name="style">
+				<![CDATA[]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+</root>

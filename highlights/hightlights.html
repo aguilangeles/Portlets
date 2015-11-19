@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Destaque de producto</title>
+
+    <style>
+         #epi-highlights  .flex-container{
+                display: flex;
+                margin-left: 3%;
+                margin-right: 3%;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                <#if getterUtil.getBoolean(settings.isImage.getData())>
+                background: url(${settings.isImage.imagen.data});
+                <#else>
+                background: ${settings.isImage.background.data} ;
+                </#if>
+            }
+            #epi-highlights .titulo-interno h1 {
+                text-align: center;
+                padding: 15px 50px;
+                margin: 15px auto 15px auto;
+                display: table;
+                color:${settings.titleColor.getData()};
+            }
+            #epi-highlights .titulo-interno ul{
+                margin: 0;
+                padding: 0;
+                text-align: center; 
+            }
+           #epi-highlights .titulo-interno ul li {
+                display: inline-block;
+                vertical-align:top;
+                list-style: none;
+                padding: 10px 5px 10px 5px; 
+                border: solid 1px;
+                width:30%;
+                min-height: 180px;
+                margin:20px 5px;
+                text-align: center;
+                background: ${settings.color_box.getData()};
+                list-style: none;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+                border-radius: 5px;
+            }
+            #epi-highlights .titulo-interno ul li .img-icon {
+                border: solid 5px  ${settings.border_icon.getData()};
+                background: ${settings.color_box.getData()};
+                padding: 10px;
+                width: 64px;
+                height: 64px;
+                line-height: 64px;
+                text-align: center;
+                margin: -45px auto 0 auto;
+                -webkit-border-radius: 100px;
+                -moz-border-radius: 100px;
+                -ms-border-radius: 100px;
+                -o-border-radius: 100px;
+                border-radius: 100px;
+            }  
+            #epi-highlights .comentario p{
+                padding-top:5px;
+                font-size:22px;
+            }
+ 
+
+        /* Portrait tablet to landscape and desktop */
+        @media (min-width: 768px) and (max-width: 979px) { 
+             #epi-highlights .titulo-interno ul li { 
+              width:45%;     
+              min-height: 180px; 
+         }
+         }
+        /* Landscape phone to portrait tablet */
+        @media (max-width: 767px) { 
+         #epi-highlights .titulo-interno ul li { 
+              width:70%;     
+              min-height: 180px; 
+         }
+          }
+         
+        /* Landscape phones and down */
+        @media (max-width: 480px) { 
+         #epi-highlights .titulo-interno ul li { 
+              width:90%;     
+              min-height: 180px; 
+         }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="epi-highlights">
+        <div class="flex-container">
+            <div class="titulo-interno">
+                <h1>${heading.data}</h1>
+                <ul>
+                    <#if features.getSiblings()?has_content>
+                    <#list features.getSiblings() as cur_features>
+                    <li> 
+                        <div class="img-icon">
+                            <img alt="Imagen" src="${cur_features.icono.data}" />
+                        </div>
+                        <div class="comentario">
+                            <p>${cur_features.mensaje.data}</p>
+                        </div>
+                     </li>
+                    </#list>
+                    </#if>
+                </ul>
+            </div>
+        </div>
+        </div>
+</body>
+</html>
+
+    
