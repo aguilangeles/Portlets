@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Destaque de producto</title>
-
+    <title>Highlights ald</title>
     <style>
-         #epi-highlights  .flex-container{
+  #epi-highlights  .flex-container{
                 display: flex;
                 margin-left: 3%;
                 margin-right: 3%;
@@ -38,13 +37,14 @@
                 vertical-align:top;
                 list-style: none;
                 padding: 10px 5px 10px 5px; 
-                border: solid 1px;
                 width:30%;
                 min-height: 180px;
                 margin:20px 5px;
                 text-align: center;
-                background: ${settings.color_box.getData()};
-                list-style: none;
+                background: url(${features.image_box.getData()})  ;
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+               list-style: none;
                 -webkit-border-radius: 5px;
                 -moz-border-radius: 5px;
                 -ms-border-radius: 5px;
@@ -52,7 +52,6 @@
                 border-radius: 5px;
             }
             #epi-highlights .titulo-interno ul li .img-icon {
-                border: solid 5px  ${settings.border_icon.getData()};
                 background: ${settings.color_box.getData()};
                 padding: 10px;
                 width: 64px;
@@ -68,10 +67,9 @@
             }  
             #epi-highlights .comentario p{
             padding-top:5px;
-            font-size:22px;
+            font-size:20px;
             }
- 
-
+                     
         /* Portrait tablet to landscape and desktop */
         @media (min-width: 768px) and (max-width: 979px) { 
              #epi-highlights .titulo-interno ul li { 
@@ -84,7 +82,7 @@
          #epi-highlights .titulo-interno ul li { 
               width:70%;     
               min-height: 180px; 
-         }
+            }
           }
          
         /* Landscape phones and down */
@@ -111,6 +109,7 @@
                         </div>
                         <div class="comentario">
                             <p>${cur_features.mensaje.data}</p>
+                      </div>
                     </li>
                     </#list>
                     </#if>
@@ -120,5 +119,3 @@
         </div>
 </body>
 </html>
-
-    

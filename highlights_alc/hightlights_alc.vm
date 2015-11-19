@@ -53,32 +53,6 @@
 				</entry>
 			</meta-data>
 		</dynamic-element>
-		<dynamic-element dataType="string" indexType="keyword" localizable="true" name="color_box" readOnly="false" repeatable="false" required="false" showLabel="true" type="text" width="small">
-			<meta-data locale="en_US">
-				<entry name="label">
-					<![CDATA[Color Caja]]>
-				</entry>
-				<entry name="predefinedValue">
-					<![CDATA[#FFF]]>
-				</entry>
-				<entry name="tip">
-					<![CDATA[Configure el color de la caja.]]>
-				</entry>
-			</meta-data>
-		</dynamic-element>
-		<dynamic-element dataType="string" indexType="keyword" localizable="true" name="border_icon" readOnly="false" repeatable="false" required="false" showLabel="true" type="text" width="small">
-			<meta-data locale="en_US">
-				<entry name="label">
-					<![CDATA[Color Borde Icono]]>
-				</entry>
-				<entry name="predefinedValue">
-					<![CDATA[#67C39E]]>
-				</entry>
-				<entry name="tip">
-					<![CDATA[Modifique el color del borde del ícono]]>
-				</entry>
-			</meta-data>
-		</dynamic-element>
 		<meta-data locale="en_US">
 			<entry name="label">
 				<![CDATA[Configuraciones]]>
@@ -131,6 +105,19 @@
 				</entry>
 				<entry name="tip">
 					<![CDATA[Descripción del producto]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<dynamic-element dataType="image" fieldNamespace="wcm" indexType="keyword" localizable="true" name="image_box" readOnly="false" repeatable="false" required="false" showLabel="true" type="wcm-image" width="">
+			<meta-data locale="en_US">
+				<entry name="label">
+					<![CDATA[Imagen Caja]]>
+				</entry>
+				<entry name="predefinedValue">
+					<![CDATA[]]>
+				</entry>
+				<entry name="tip">
+					<![CDATA[]]>
 				</entry>
 			</meta-data>
 		</dynamic-element>
