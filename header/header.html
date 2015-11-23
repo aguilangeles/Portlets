@@ -1,0 +1,35 @@
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+</head>
+<style>
+#epi-header .logoUno {
+	margin-left: 20%;
+}
+#epi-header .contenido{
+
+padding-top:0px
+}
+</style>
+<div id="epi-header">
+	<div class="row-fluid">
+		<div class="span3 pull-left">
+			<img class="logoUno" alt="Imagen 1" src="$logo.getData()" />
+
+		</div>
+		<div class="span3 pull-right hidden-phone hidden-tablet">
+
+<!-- 			si el usuario desea agregar contenido a la derecha -->
+			#if ($getterUtil.getBoolean($isRight.getData())) 
+<!-- 			si desea que sea un logo -->
+			#if($getterUtil.getBoolean($isRight.isAnotherLogo.getData())) 
+			<img alt="Imagen" src="$isRight.isAnotherLogo.logoOp.getData()" /> 
+				#else
+<!-- 				o si desea que sea texto enriquecido -->
+			<div class="contenido">$isRight.contenido.getData()</div>
+			#end 
+			#end
+			
+		</div>
+	</div>
+</div>
