@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>Adicionales Demo</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+#epi-complementario .epi-flex-container {
+	margin: 2% 3%;
+	justify-content: center;
+	background: $settings.background.getData();
+}
+
+#epi-complementario .titulo {
+	background: $settings.color_caja.getData();
+	margin: 2% 13% 1% 13%;
+	text-align: center;
+}
+
+#epi-complementario .titulo > p {
+	font-size: 27px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	color: $settings.titulo_color.getData();
+}
+
+#epi-complementario .dato-impar {
+	display: flex;
+	margin-left: 19.65812%;
+}
+
+#epi-complementario i > span {
+	color: $settings.texto_color.getData();
+}
+
+#epi-complementario i {
+ 
+	color: $settings.icono_color.getData();
+}
+
+
+
+	@media ( max-width : 767px) {
+	#epi-complementario .dato-impar,#epi-complementario .dato-par {
+		margin-left: 10%;
+	}
+	#epi-complementario .titulo {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	#epi-complementario .titulo > p {
+		font-size: 20px;
+	}
+	}
+
+	/* Landscape phones and down */
+	@media ( max-width : 480px) {
+		#epi-complementario .titulo {
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+
+	}
+
+</style>
+</head>
+<body>
+	<div id="epi-complementario">
+		<div class="epi-flex-container">
+			<div class="titulo">
+				<p>$titulo.getData()</p>
+			</div>
+			<div class="row-fluid">
+				#if (!$adicional.getSiblings().isEmpty()) #foreach ($cur_adicional
+				in $adicional.getSiblings()) #if($velocityCount %2 ==0)
+				<div class="dato-par span4">
+					<i class="icon-ok"> <span>
+						&nbsp;$cur_adicional.getData() </span></i>
+				</div>
+				#else
+				<div class="dato-impar span4 offset2">
+					<i class="icon-ok">
+					<span> &nbsp;$cur_adicional.getData()
+					</span></i>
+				</div>
+				#end #end #end
+			</div>
+		</div>
+	</div>
+</body>
+</html>
