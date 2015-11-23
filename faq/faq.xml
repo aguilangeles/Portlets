@@ -1,0 +1,110 @@
+
+<root available-locales="en_US" default-locale="en_US">
+	<dynamic-element fieldNamespace="ddm" indexType="keyword" localizable="true" name="colors" readOnly="false" repeatable="false" required="false" showLabel="true" type="ddm-separator" width="">
+		<dynamic-element dataType="string" indexType="keyword" localizable="true" name="box" readOnly="false" repeatable="false" required="false" showLabel="true" type="text" width="small">
+			<dynamic-element dataType="string" indexType="keyword" localizable="true" name="question" readOnly="false" repeatable="false" required="false" showLabel="true" type="text" width="small">
+				<meta-data locale="en_US">
+					<entry name="label">
+						<![CDATA[Titulo y preguntas]]>
+					</entry>
+					<entry name="predefinedValue">
+						<![CDATA[#FFF]]>
+					</entry>
+					<entry name="tip">
+						<![CDATA[]]>
+					</entry>
+				</meta-data>
+			</dynamic-element>
+			<meta-data locale="en_US">
+				<entry name="label">
+					<![CDATA[Caja]]>
+				</entry>
+				<entry name="predefinedValue">
+					<![CDATA[#EF4123]]>
+				</entry>
+				<entry name="tip">
+					<![CDATA[]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<dynamic-element dataType="string" indexType="keyword" localizable="true" name="background_anwsers" readOnly="false" repeatable="false" required="false" showLabel="true" type="text" width="small">
+			<dynamic-element dataType="string" indexType="keyword" localizable="true" name="anwser" readOnly="false" repeatable="false" required="false" showLabel="true" type="text" width="small">
+				<meta-data locale="en_US">
+					<entry name="label">
+						<![CDATA[Respuestas]]>
+					</entry>
+					<entry name="predefinedValue">
+						<![CDATA[#D30ED3]]>
+					</entry>
+					<entry name="tip">
+						<![CDATA[]]>
+					</entry>
+				</meta-data>
+			</dynamic-element>
+			<meta-data locale="en_US">
+				<entry name="label">
+					<![CDATA[Fondo Respuestas]]>
+				</entry>
+				<entry name="predefinedValue">
+					<![CDATA[]]>
+				</entry>
+				<entry name="tip">
+					<![CDATA[]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<meta-data locale="en_US">
+			<entry name="label">
+				<![CDATA[Configuraciones]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[Modifique el fondo de la caja del título y las preguntas, así como el color de texto de preguntas y respuestas.]]>
+			</entry>
+			<entry name="style">
+				<![CDATA[]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element dataType="string" indexType="keyword" localizable="true" name="titulo" readOnly="false" repeatable="false" required="false" showLabel="true" type="text" width="small">
+		<meta-data locale="en_US">
+			<entry name="label">
+				<![CDATA[Titulo]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[Preguntas Frecuentes]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element dataType="string" indexType="keyword" localizable="true" name="pregunta" readOnly="false" repeatable="true" required="false" showLabel="true" type="text" width="small">
+		<dynamic-element dataType="html" fieldNamespace="ddm" indexType="keyword" localizable="true" name="respuesta" readOnly="false" repeatable="false" required="false" showLabel="true" type="ddm-text-html" width="small">
+			<meta-data locale="en_US">
+				<entry name="label">
+					<![CDATA[Respuesta]]>
+				</entry>
+				<entry name="predefinedValue">
+					<![CDATA[]]>
+				</entry>
+				<entry name="tip">
+					<![CDATA[]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<meta-data locale="en_US">
+			<entry name="label">
+				<![CDATA[Pregunta]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[¿Todos los bienes pueden ser cubiertos? *]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[Formule aquí su pregunta]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+</root>

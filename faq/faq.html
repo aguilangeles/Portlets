@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Demo Toggle</title>
+        <style>
+.aui .accordion-group {
+	border-style: hidden;
+}
+
+#faq-accordion  .accordion .titulo {
+ font-family:MissionScriptRegular;
+			    font-size: 34px;
+			    font-weight: normal;
+	background: $colors.box.data;
+	color: $colors.box.question.data;
+
+	padding-left: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+	margin-left: 25px;
+}
+
+#faq-accordion .accordion-group {
+	background: $colors.box.data;
+	color: $colors.box.question.data;
+}
+
+#faq-accordion   .icon-question-sign {
+	padding-left: 5px;
+}
+
+#faq-accordion  .accordion-group  .accordion-inner {
+	margin: 0px;
+	font-size: 15px;
+	padding-left: 35px;
+	background: $colors.background_anwsers.data;
+	color: $colors.background_anwsers.anwser.data;
+}
+
+#faq-accordion  .accordion-heading p {
+	font-size: 18px;
+	padding-left: 25px;
+	 padding-bottom: 5px;
+    padding-top: 5px;
+	
+}
+
+#faq-accordion .accordion>ul>li {
+	list-style-type: none;
+}
+
+@media ( min-width : 768px) and (max-width: 979px) ,( max-width : 767px),  ( max-width : 480px){
+	#faq-accordion  .accordion .titulo {
+		/*font-size: 15px;*/
+	}
+	#faq-accordion .container-fluid {
+		width: 90%;
+	}
+	#faq-accordion  .accordion-heading p {
+	font-size: 15px;
+	}
+}
+</style>
+    </head>
+    <body>
+        <div id="faq-accordion">
+            <div class="container-fluid">
+                <div class="accordion" id="accordion">
+                    <div class="titulo">
+
+                        <p>$titulo.getData()</p>
+                    </div>
+
+                    #if (!$pregunta.getSiblings().isEmpty())
+                    #foreach ($cur_pregunta in $pregunta.getSiblings())
+                    <ul>
+                        <li>
+                            <div class="accordion-group">
+                                <div class="accordion-heading"  href="javascript:void(0)">
+                                    <p> <strong>
+                                      
+                                            <i class="icon-question-sign"></i>
+                                            $cur_pregunta.getData()
+                            </strong>
+                                    </p>
+                                </div>
+                                <div id="collapseOne" class="toggler-content toggler-content-collapsed">
+                                    <div class="accordion-inner">
+                                        <p>
+                                            $cur_pregunta.respuesta.getData()
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    #end
+                    #end
+                </div>
+                <script>
+                    YUI({filter: 'raw'}).use('aui-toggler', 'aui-toggler-accessibility', function (Y) {
+
+                        new Y.TogglerDelegate({
+                            animated: true,
+                            container: '#accordion',
+                            content: '.toggler-content',
+                            header: '.accordion-heading',
+                            expanded: false,
+                            transition: {
+                                duration: 0.4,
+                                easing: 'cubic-bezier(0, 0.1, 0, 1.0)'
+                            }
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+    </body>
+</html>
