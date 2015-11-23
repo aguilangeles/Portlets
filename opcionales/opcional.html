@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+<title>Impacto Demo</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+#impacto .container-fluid {
+margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 2%; 
+	border: 4px solid$settings.border.data;
+	text-align: center;
+	#if($getterUtil.getBoolean($settings.isImage.getData())) 
+	background :url('$settings.isImage.background_image.getData()');
+	background-size: 100% 100%;
+	background-repeat: no-repeat scroll 0 0; 
+	#else
+	background: $settings.isImage.background_color.getData() none repeat scroll 0 0;
+	#end
+}
+.contenido{
+
+padding:2% 5%;
+
+}
+
+
+
+/* Portrait tablet to landscape and desktop */
+@media ( min-width : 768px) and (max-width: 979px), ( max-width : 767px) , ( max-width : 480px){
+	#impacto .container-fluid {
+		width: 80%;
+		min-height: 80%;
+       	}
+
+}
+
+
+</style>
+</head>
+<body>
+	<div id="impacto">
+		<div class="container-fluid">
+		<div class="contenido">
+			${Impacto.getData()}
+			</div>
+		</div>
+	</div>
+</body>
+</html>
