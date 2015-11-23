@@ -74,7 +74,7 @@
 				<![CDATA[Titulo]]>
 			</entry>
 			<entry name="predefinedValue">
-				<![CDATA[Preguntas Frecuentes]]>
+				<![CDATA[Titulo Preguntas Frecuentes]]>
 			</entry>
 			<entry name="tip">
 				<![CDATA[]]>
@@ -82,7 +82,7 @@
 		</meta-data>
 	</dynamic-element>
 	<dynamic-element dataType="string" indexType="keyword" localizable="true" name="pregunta" readOnly="false" repeatable="true" required="false" showLabel="true" type="text" width="small">
-		<dynamic-element dataType="html" fieldNamespace="ddm" indexType="keyword" localizable="true" name="respuesta" readOnly="false" repeatable="false" required="false" showLabel="true" type="ddm-text-html" width="small">
+		<dynamic-element dataType="html" fieldNamespace="ddm" indexType="keyword" localizable="true" name="respuesta" readOnly="false" repeatable="true" required="false" showLabel="true" type="ddm-text-html" width="small">
 			<meta-data locale="en_US">
 				<entry name="label">
 					<![CDATA[Respuesta]]>
@@ -100,7 +100,7 @@
 				<![CDATA[Pregunta]]>
 			</entry>
 			<entry name="predefinedValue">
-				<![CDATA[¿Todos los bienes pueden ser cubiertos? *]]>
+				<![CDATA[¿Límites de cobertura?]]>
 			</entry>
 			<entry name="tip">
 				<![CDATA[Formule aquí su pregunta]]>

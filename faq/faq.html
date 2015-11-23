@@ -6,62 +6,64 @@
         <title>Demo Toggle</title>
         <style>
 .aui .accordion-group {
-	border-style: hidden;
+    border-style: hidden;
 }
 
 #faq-accordion  .accordion .titulo {
  font-family:MissionScriptRegular;
-			    font-size: 34px;
-			    font-weight: normal;
-	background: $colors.box.data;
-	color: $colors.box.question.data;
+                font-size: 34px;
+                font-weight: normal;
+    background: $colors.box.data;
+    color: $colors.box.question.data;
 
-	padding-left: 15px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	margin-bottom: 10px;
-	margin-left: 25px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    margin-left: 25px;
 }
 
 #faq-accordion .accordion-group {
-	background: $colors.box.data;
-	color: $colors.box.question.data;
+    background: $colors.box.data;
+    color: $colors.box.question.data;
 }
 
 #faq-accordion   .icon-question-sign {
-	padding-left: 5px;
+    padding-left: 5px;
 }
 
 #faq-accordion  .accordion-group  .accordion-inner {
-	margin: 0px;
-	font-size: 15px;
-	padding-left: 35px;
-	background: $colors.background_anwsers.data;
-	color: $colors.background_anwsers.anwser.data;
+    margin: 0px;
+    font-size: 15px;
+    padding-left: 35px;
+    background: $colors.background_anwsers.data;
+    
+    /*dado que es texto enriquecido. el color se define desde el html
+    color:  $colors.background_anwsers.anwser.data;*/
 }
 
 #faq-accordion  .accordion-heading p {
-	font-size: 18px;
-	padding-left: 25px;
-	 padding-bottom: 5px;
+    font-size: 18px;
+    padding-left: 25px;
+     padding-bottom: 5px;
     padding-top: 5px;
-	
+    
 }
 
 #faq-accordion .accordion>ul>li {
-	list-style-type: none;
+    list-style-type: none;
 }
 
 @media ( min-width : 768px) and (max-width: 979px) ,( max-width : 767px),  ( max-width : 480px){
-	#faq-accordion  .accordion .titulo {
-		/*font-size: 15px;*/
-	}
-	#faq-accordion .container-fluid {
-		width: 90%;
-	}
-	#faq-accordion  .accordion-heading p {
-	font-size: 15px;
-	}
+    #faq-accordion  .accordion .titulo {
+        /*font-size: 15px;*/
+    }
+    #faq-accordion .container-fluid {
+        width: 90%;
+    }
+    #faq-accordion  .accordion-heading p {
+    font-size: 15px;
+    }
 }
 </style>
     </head>
